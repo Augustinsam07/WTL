@@ -1,0 +1,175 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.banner{
+    width:100%;
+    height:500px;
+    background-image: url('https://www.karunya.edu/img/general/aerial-view.jpg.pagespeed.ce.4_-R-b0nuM.jpg');
+    background-repeat:no-repeat ;
+    
+}
+h2{
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 10px;  
+    text-align:center;
+    background-size: cover;
+}
+.title{
+    background-color: tan;
+    text-align: justify;
+    padding:10px;
+   box-sizing: border-box;
+}
+.aboutus .content{
+    background-color: tan;
+    box-sizing: border-box;
+}
+.aboutus .title{
+    text-align:center;
+}
+.box1{
+    width:33.4%;
+    height: 300px;
+    background-image: url('https://badisoch.in/wp-content/uploads/2022/07/cse.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    float:left;
+}
+.box2{
+    width:33.3%;
+    height: 300px;
+    background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGlicmFyeXxlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    float:left;
+}
+.box3{
+    width:33.3%;
+    height: 300px;
+    background-image: url('https://image.shutterstock.com/image-photo/abstract-luminous-dna-molecule-doctor-260nw-1395147236.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    float:left;
+}
+.box1 .CSE{
+    background-color: black;
+    text-align: center;
+    color: white;
+    opacity:0.7;
+}
+.box1 .CSE:hover{
+    opacity: 1;
+}
+.box2 .LIBRARY{
+    background-color: black;
+    text-align: center;
+    color: white;
+    opacity:0.7;
+    bottom: -255px;
+    position: absolute;
+    width: 33.3%;
+}
+.box2 .LIBRARY:hover{
+    opacity: 1;
+}
+.box3 .BIOTECH{
+    background-color: black;
+    text-align: center;
+    color: white;
+    opacity:0.7;
+}
+.box3 .BIOTECH:hover{
+    opacity: 1;
+}
+.campus{
+    float: left;
+    width: 50%;
+    height: 300px;
+    background-color: tan;
+}
+.campus .title{
+    padding-left: 80px;
+    padding-top: 70px;
+}
+.campus .content1{
+    padding:0 80px;
+    text-align:justify;
+}
+.box4{
+    width:50%;
+    height: 300px;
+    background-image: url('Campus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    float:right;
+   }
+.box5{
+    float: right;
+    width: 50%;
+    height: 400px;
+    background-color: tan;
+}
+.box5 .title{
+    padding-left: 80px;
+    padding-top: 120px;
+}
+.box5 .content2{
+    padding:0 80px;
+    text-align: justify;
+}
+.layer4{
+    display: flex;
+    width:100%;
+    height: 400px;
+}
+.layer4 .forms{
+    background-image: url('https://images6.alphacoders.com/731/thumb-1920-731739.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    width:50%
+}
+.layer4 .forms .form{
+    font-family: arial;;
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 30%;
+    padding: 2%;
+    background-color: aliceblue;   
+}
+.layer4 .forms .form form input[type=text]{
+    width:85%;
+    align-items: center;
+    padding: 2%;
+    margin: 5px;
+    border: 2px solid blue;
+    border-radius: 4px;
+}
+.layer4 .forms .form form input[type=submit]{
+    width:90%;
+    padding: 2%;
+    margin-top: 10px;
+    margin: 5px;
+    background-color: rgb(1, 94, 254);
+    border: 0;
+    color: white;
+    border-radius: 4px;
+}
+.layer4 .forms .form form input[type=submit]:hover{
+    background-color: blue;
+}
+.layer4 .forms .form form label{
+    width:50%;
+    padding: 2%;
+    margin: 10px;
+    border-radius: 4px;
+}
+.layer4 .forms .form p{
+    padding: 4%;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
