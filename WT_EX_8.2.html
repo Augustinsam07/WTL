@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("control", function ($scope) {
+            $scope.items = [];
+            $scope.addItem = function () {
+                $scope.items.push([$scope.itemname1, "Rs." + $scope.itemname2]);
+            };
+            $scope.remove = function ($index) {
+                $scope.items.splice($index, 1);
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="ex-8.2.css">
+</head>
+
+<body ng-app="myApp" ng-controller="control">
+    <div class="d">
+        <h1>Product Inventory System</h1>
+        <label>Enter the Product Name:</label>
+        <br>
+        <input type="text" ng-model="itemname1" class="i" placeholder="Enter the Product Name">
+        <br><br>
+        <label>Enter the Product Price:</label>
+        <br>
+        <input type="text" ng-model="itemname2" class="i" placeholder="Enter the Product Price">
+        <br><br>
+        <button ng-click="addItem()" class="b">Add Product</button>
+        <hr>
+        <br>
+        <table cellspacing="0" width="100%" style="text-align:center;">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+            <tr ng-repeat="x in items track by $index">
+                <td>{{x[0]}}</td>
+                <td>{{x[1]}}</td>
+                <td class="c">
+                    <a ng-click="remove($index)">[delete]</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.d {
+    position: relative;
+    left: 500px;
+    width: 400px;
+    color: blue;
+}
+
+.c {
+    color: red;
+}
+
+tr:nth-child(even) {
+    background-color: gainsboro;
+}
+
+.i {
+    height: 20px;
+    border-radius: 7px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid gray;
+}
+
+.b {
+    height: 40px;
+    width: 180px;
+    border: 1px solid black;
+    background-color: gainsboro;
+    border-radius: 3px;
+}
+
+th {
+    padding: 10px;
+    background-color: rgb(40, 182, 40);
+    color: white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid black;
+}
+
+td {
+    padding: 10px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid black;
+}

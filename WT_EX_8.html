@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exp-8</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, height=500px initial-scale=1.0">
+        <link rel="stylesheet" href="ex-8.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script>
+         var app=angular.module('college', [])
+         app.controller('control',function($scope){
+            $scope.avg=function(){
+            
+            var c1=$scope.course1;
+            var c2=$scope.course2;
+            var c3=$scope.course3;
+            var c4=$scope.course4;
+            var c5=$scope.course5;
+            var sum=(c1+c2+c3+c4+c5)/5;
+            $scope.sum=sum;
+            if (sum>95){
+                  $scope.output='S';
+            }
+            else if (sum>85 && sum<=95){
+               $scope.output='A';
+            }
+            else if (sum>75 && sum<=85){
+               $scope.output='B';
+            }
+            else if (sum>65 && sum<=75){
+               $scope.output='C';
+            }
+            else if (sum>=50 && sum<=65){
+               $scope.output='D';
+            }
+            else{
+               $scope.output='F';
+            }
+         }
+         });
+        </script>  
+
+    </head>
+    <body>
+      <div ng-app="college" ng-controller="control">
+        <div class="a">My College</div>
+        <div class="b">Grade Evaluation</div>
+        <div class="c">
+           Student Name:<br>
+           <input type="text" placeholder="SAM" name="name">
+        </div>
+        <div class="c">
+            Student RegNo:<br>
+            <input type="number" placeholder="URK20CS1100" name="regno">
+         </div>
+         <div class="c">
+            Course 1 Marks:<br>
+            <input type="number" placeholder="90" name="m1" ng-model="course1">
+         </div>
+         <div class="c">
+            Course 2 Marks:<br>
+            <input type="number" placeholder="95" name="m2" ng-model="course2">
+         </div>
+         <div class="c">
+            Course 3 Marks:<br>
+            <input type="number" placeholder="80" name="m3" ng-model="course3">
+         </div>
+         <div class="c">
+            Course 4 Marks:<br>
+            <input type="number" placeholder="90" name="m4" ng-model="course4">
+         </div>
+         <div class="c">
+            Course 5 Marks:<br>
+            <input type="number" placeholder="96" name="m5" ng-model="course5">
+         </div>
+         <div class="e"><input class="d" type="button" value="Find Grade" ng-click="avg()"></div>
+         <br><br><div class="f"></div>
+         <div class="g">Grade Details</div>
+         <div class="j">{{sum}}</div>
+         <div class="h">Average Marks </div>
+         <div class="j">{{output}}</div>
+         <div class="i">Grade </div></div>
+        
+         
+
+    </body>
+</html>
