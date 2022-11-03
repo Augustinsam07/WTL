@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="ex-5.css" rel="stylesheet">
+    <script type="text/javascript">
+        function add() {
+            var a = parseInt(document.getElementById('t1').value);
+            var b = parseInt(document.getElementById('t2').value);
+            var sum = a + b;
+            document.getElementById('result').value = sum;
+        }
+        function sub() {
+            var a = parseInt(document.getElementById('t1').value);
+            var b = parseInt(document.getElementById('t2').value);
+            var sum = a - b;
+            document.getElementById('result').value = sum;
+        }
+        function mul() {
+            var a = parseInt(document.getElementById('t1').value);
+            var b = parseInt(document.getElementById('t2').value);
+            var sum = a * b;
+            document.getElementById('result').value = sum;
+        }
+        function div() {
+            var a = parseInt(document.getElementById('t1').value);
+            var b = parseInt(document.getElementById('t2').value);
+            var sum = a / b;
+            document.getElementById('result').value = sum;
+        }
+        function clearFields() {
+            document.getElementById("t1").value = ""
+            document.getElementById("t2").value = ""
+            document.getElementById("result").value = ""
+        }
+    </script>
+</head>
+
+<body>
+    <div id="m">
+        <h1>Simple calculator</h1>
+        <input type="text" placeholder="Number eg:100" id="t1">
+        <input type="text" placeholder="Number eg:100" id="t2">
+        <div id="cal">
+            <button onclick="add()" id="c1">+ Add</button>
+
+            <button onclick="sub()" id="c2">- Subtract</button>
+
+            <button onclick="mul()" id="c3">* Multiply</button>
+
+            <button onclick="div()" id="c4">/ Divide</button>
+        </div>
+        <br><br>
+        <input type="text" id="result" .readonly placeholder="Result:">
+        <input type="button" id="clear" onclick="clearFields()" value="clear">
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+h1 {
+    padding-left: 43%;
+    font-size: 40px;
+
+}
+
+#t1 {
+    margin-left: 40%;
+    padding: 13px;
+    border: 2px solid;
+}
+
+#t2 {
+    padding: 13px;
+    border: 2px solid;
+}
+
+#c1 {
+    margin-left: 40%;
+}
+
+#c1,
+#c2,
+#c3,
+#c4 {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+#c3 {
+    margin-left: 10px;
+}
+
+#cal {
+    margin-top: 20px;
+    margin-bottom: 23px;
+}
+
+#result {
+    margin-left: 40%;
+    padding: 13px;
+    border: 2px solid;
+    padding-left: 115px;
+}
+
+#clear {
+    padding: 13px;
+    border-radius: 5px;
+    background-color: rgb(200, 36, 36);
+    padding-left: 30px;
+    padding-right: 30px;
+
+    text-align: center;
+
+}
+
+#m {
+    background-color: gainsboro;
+    padding: 0%;
+}
