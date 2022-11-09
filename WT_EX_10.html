@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registration Form!</h1>
+    <br>
+    <form action="/server" method="post">
+        Name: <input type="text" name="name"><br><br>
+        Password: <input type="password" name="pass"><br><br>
+        Age:<input type="number" name="age"><br><br>
+        Mobile Number:<input type="tel" name="mobile"><br><br>
+        Email:<input type="email" name="email"><br><br>
+        Gender:<input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female <br><br>
+        State:<select name="state">
+            <option>Tamilnadu</option>
+            <option>Maharashtra</option>
+            <option>Karnataka/option>
+            <option>Kerla</option>
+        </select>
+        <br><br>
+        Skills:
+        <input type='checkbox' name="s1" value="Java Script">Java Script
+        <input type='hidden' name='s1' value=''>
+        &nbsp;&nbsp;&nbsp;
+        <input type='checkbox' name="s2" value="Python">Python
+        <input type='hidden' name='s2' value=''> 
+        <input type='checkbox' name="s3" value="C++">C++
+        <input type='hidden' name='s3' value=''>
+        <input type='checkbox' name="s4" value="Java">Java
+        <input type='hidden' name='s4' value=''>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
